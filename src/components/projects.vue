@@ -9,7 +9,7 @@
           <table>
             <thead>
               <tr >
-                <th class="is-info">Project Name</th>
+                <th>Project Name</th>
                 <th>URL</th>
                 <th>Description</th>
               </tr>
