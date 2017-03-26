@@ -5,12 +5,11 @@ import App from './App'
 import navbar from './components/navbar'
 import router from './router'
 
-Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
   template: `
-  <section class="hero is-info is-medium">
+  <section class="hero is-info is-fullheight">
     <navbar />
         <App/>
 </section>

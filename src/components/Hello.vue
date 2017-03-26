@@ -1,5 +1,6 @@
 <template>
 <div class="hello">
+  <section class="avatar"></section>
   <h1 class="title">{{ msg }}</h1>
   <h3 class="subtitle">{{ word }}</h3>
   <p class="block">

@@ -1,7 +1,6 @@
 <template>
   <div class="hero-body">
   <div id="app" class="container has-text-centered">
-    <section class="avatar"></section>
     <router-view></router-view>
   </div>
 </div>

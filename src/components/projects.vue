@@ -1,24 +1,24 @@
 <template lang="html">
-  <div id="projects">
-    <div class="columns">
-      <div class="column is-half">
-        <div class="notification">
-          List of fake projects, courtesy of mocky.io ...
+  <div id="projects"  >
+    <div class="columns is-centered">
+      <div class="column is-half ">
+        <div class="notification is-info">
+          List of projects, from github
         </div>
         <div class="">
-          <table class="table">
+          <table>
             <thead>
-              <tr>
-                <th>Project Name</th>
-                <th>Assigned To</th>
-                <th>Priority</th>
+              <tr >
+                <th class="is-info">Project Name</th>
+                <th>URL</th>
+                <th>Description</th>
               </tr>
             </thead>
             <tbody>
               <tr v-for="item in projects">
                 <td>{{item.name}}</td>
-                <td>{{item.assignedTo}}</td>
-                <td>{{item.priority}}</td>
+                <td>{{item.html_url}}</td>
+                <td>{{item.description}}</td>
               </tr>
             </tbody>
           </table>
@@ -37,7 +37,7 @@ export default {
     }
   },methods: {
     loadProjects() {
-      this.axios.get('http://www.mocky.io/v2/585e03ce100000b82c501e8e').then((response) => {
+      this.axios.get('https://api.github.com/users/zickfz/repos').then((response) => {
         this.projects = response.data
       }, (err) => {
         console.log(err)
