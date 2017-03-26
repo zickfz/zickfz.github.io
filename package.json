@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
-    "build": "node build/build.js"
+    "build": "rimraf dist && webpack --progress --hide-modules --config build/webpack.prod.conf.js"
   },
   "dependencies": {
     "axios": "^0.15.3",
