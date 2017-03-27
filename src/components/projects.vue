@@ -2,7 +2,7 @@
   <div id="projects"  >
     <div class="columns is-centered">
       <div class="column is-half ">
-        <div class="notification is-info">
+        <div class="notification is-primary">
           List of projects, from github
         </div>
         <div class="">

@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import navbar from './components/navbar'
+import Footer from './components/footer'
 import router from './router'
 
 
@@ -12,8 +13,9 @@ new Vue({
   <section class="hero is-primary is-fullheight">
     <navbar />
         <App/>
-</section>
+    <Footer/>
+  </section>
   `,
     router,
-    components: { App, navbar, }
+    components: { App, navbar,Footer }
 }).$mount('#app');
