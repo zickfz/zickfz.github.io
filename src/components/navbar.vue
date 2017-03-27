@@ -9,12 +9,12 @@
         </div>
         <div class="nav-right nav-menu" >
           <span class="nav-item">
-          <router-link class="is-info" to="/">
+          <router-link class="is-primary" to="/">
             <span>Home</span>
           </router-link>
          </span>
           <span class="nav-item">
-            <router-link  class="button is-info is-inverted" to="/projects">
+            <router-link  class="button is-dark is-inverted" to="/projects">
               <span class="icon">
                 <i class="fa fa-github"></i>
               </span>

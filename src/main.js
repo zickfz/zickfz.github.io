@@ -8,12 +8,12 @@ import router from './router'
 
 /* eslint-disable no-new */
 new Vue({
-  template: `
-  <section class="hero is-info is-fullheight">
+    template: `
+  <section class="hero is-primary is-fullheight">
     <navbar />
         <App/>
 </section>
   `,
-  router,
-  components: { App,  navbar,}
+    router,
+    components: { App, navbar, }
 }).$mount('#app');
