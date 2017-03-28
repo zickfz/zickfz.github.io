@@ -17,5 +17,5 @@ new Vue({
   </section>
   `,
     router,
-    components: { App, navbar,Footer }
+    components: { App, navbar, Footer }
 }).$mount('#app');
