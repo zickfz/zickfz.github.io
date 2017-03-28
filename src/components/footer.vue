@@ -3,7 +3,7 @@
  <div class="container">
     <div class="content has-text-centered">
       <p>
-        <strong>Portfolio</strong> build by VueJS, Bulma and FontAwesome.   <a class="icon" href="https://github.com/jgthms/bulma">
+        <strong>Portfolio</strong> build by VueJS, Bulma and FontAwesome
           <i class="fa fa-github"></i>
         </a>
       </p>
