@@ -34,5 +34,7 @@ export default {
 </script>
 
 <style lang="css">
-
+.hero.is-primary .nav{
+  box-shadow:none;
+}
 </style>
