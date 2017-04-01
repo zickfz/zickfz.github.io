@@ -23,22 +23,23 @@
             </tbody>
           </table>
         </div>-->
-<article class="media" v-for="item in projects">
-    <div class="media-left">
-      <figure class="image is-64x64">
-        <img src="http://bulma.io/images/placeholders/128x128.png" alt="Image">
-      </figure>
+<div class="card" v-for="item in projects">
+  <header class="card-header">
+    <p class="card-header-title">
+      {{item.name}}
+    </p>
+    <a class="card-header-icon">
+      <span class="icon">
+        <i class="fa fa-angle-down"></i>
+      </span>
+    </a>
+  </header>
+  <div class="card-content">
+    <div class="content">
+      {{item.description}}
     </div>
-    <div  class="media-content">
-      <div class="content">
-        <p>
-          <strong>{{item.name}}</strong> 
-          <br>
-          {{item.description}}
-        </p>
-      </div>
-    </div>
-  </article>
+  </div>
+</div>
       </div>
     </div>
   </div>
