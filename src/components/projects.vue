@@ -1,38 +1,14 @@
 <template lang="html">
   <div id="projects"  >
-    <div class="columns is-centered">
-      <div class="column is-half ">
-        <div class="notification is-primary">
+       <div class="notification is-primary">
           List of projects, from github
         </div>
-     <!--   <div class="">
-          <table>
-            <thead>
-              <tr >
-                <th>Project Name</th>
-                <th>URL</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="item in projects">
-                <td>{{item.name}}</td>
-                <td>{{item.html_url}}</td>
-                <td>{{item.description}}</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>-->
-<div class="card" v-for="item in projects">
-  <header class="card-header">
-    <p class="card-header-title">
+    <div class="columns is-centered">
+<div class="card column" v-for="(item, index) in projects"  >
+  <header class="media-content" >
+    <p class="title">
       {{item.name}}
     </p>
-    <a class="card-header-icon">
-      <span class="icon">
-        <i class="fa fa-angle-down"></i>
-      </span>
-    </a>
   </header>
   <div class="card-content">
     <div class="content">
@@ -40,7 +16,6 @@
     </div>
   </div>
 </div>
-      </div>
     </div>
   </div>
 </template>
@@ -65,3 +40,13 @@ export default {
     }
 }
 </script>
+
+<style lang="css" scoped>
+  .card{
+    margin: 0.5em;
+  }
+  .hero.is-primary .title {
+    color: #363636;
+    text-decoration:underline;
+}
+</style>
